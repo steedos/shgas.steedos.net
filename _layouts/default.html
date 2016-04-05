@@ -163,7 +163,7 @@ desired effect
         <li class="header">分类</li>
         <!-- Optionally, you can add icons to the links -->
             {% for category in site.categories %} 
-              <li><a href="{{ site.baseurl }}/{{ category[0] }}/"> <i class="fa fa-book"></i> 
+              <li><a href="{{ site.baseurl }}/#{{ category[0] }}"> <i class="fa fa-book"></i> 
                 <span>{{ category[0] | join: "/" }}</span> <small class="label pull-right">{{ category[1].size }}</small>
               </a></li>
             {% endfor %}
