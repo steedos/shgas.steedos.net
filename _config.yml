@@ -8,11 +8,11 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : 燃气集团 信息发布平台
+tagline: 
 author :
-  name : Name Lastname
-  email : blah@email.test
+  name : 上海华炎软件科技有限公司
+  email : support @ steedos.com
   github : username
   twitter : username
   feedburner : feedname
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://shgas.steedos.net
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -80,7 +80,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : false
     disqus :
       short_name : jekyllbootstrap
     livefyre :
@@ -100,7 +100,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google
+    provider : false
     gauges :
         site_id : 'SITE ID'
     google : 
