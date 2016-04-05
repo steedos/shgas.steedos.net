@@ -1,7 +1,31 @@
 ---
-theme :
-  name : bootstrap-3
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/bootstrap-3/post.html %}
+
+
+<section class="content-header">
+  <h1>
+    {{page.categories}}
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="{{ site.baseurl }}/"><i class="fa fa-dashboard"></i> 首页</a></li>
+    <li class="active"><a href="{{ site.baseurl }}/{{page.categories}}">{{page.categories}}</a></li>
+  </ol>
+</section>
+
+<section class="content">
+
+	<div class="box box-default">
+		<div class="box-header with-border">
+		  <h1>
+		    {{ page.title }}
+		    <small>{{ page.date | date: "%B %e, %Y" }}</small>
+		  </h1>
+		</div>
+
+		<div class="box-body">
+	    	{{ content }}
+	    </div>
+	</div>
+
+</section>
