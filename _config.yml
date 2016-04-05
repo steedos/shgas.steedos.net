@@ -8,10 +8,10 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 燃气集团 信息发布平台
+title : 燃气集团
 tagline: 
 author :
-  name : 上海华炎软件科技有限公司
+  name : 华炎软件
   email : support @ steedos.com
   github : username
   twitter : username
