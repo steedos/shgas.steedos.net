@@ -78,7 +78,7 @@ desired effect
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-      <span style="padding-left:20px;font-size: 26px;line-height: 50px;color: #fff;">信&nbsp;&nbsp;息&nbsp;&nbsp;发&nbsp;&nbsp;布&nbsp;&nbsp;平&nbsp;&nbsp;台</span>
+      <div style="font-family: STXingkai; text-align:center; font-size: 36px;line-height: 50px;color: #fff;">上&nbsp;海&nbsp;燃&nbsp;气&nbsp;集&nbsp;团&nbsp;信&nbsp;息&nbsp;发&nbsp;布&nbsp;平&nbsp;台</div>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -166,7 +166,7 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
             {% for category in site.categories %} 
               <li><a href="{{ site.baseurl }}/#{{ category[0] }}"> <i class="fa fa-book"></i> 
-                <span>{{ category[0] | join: "/" }}</span> <small class="label pull-right">{{ category[1].size }}</small>
+                <span>{{ category[0] | join: "/" }}</span> <small class="label label-warning pull-right">{{ category[1].size }}</small>
               </a></li>
             {% endfor %}
 
