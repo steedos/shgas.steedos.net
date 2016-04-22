@@ -58,7 +58,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-green-light sidebar-mini sidebar-collapse">
+<body class="hold-transition skin-green-light sidebar-mini ">
 <div class="wrapper">
 
   <!-- Main Header -->
@@ -66,10 +66,11 @@ desired effect
 
     <!-- Logo -->
     <a href="{{ site.baseurl }}/" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><i class="ion ion-earth"></i> </span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><img src="/assets/adminlte/img/SHSQicon.png"></span>
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><i class="ion ion-earth"></i> </span>
+      
     </a>
 
     <!-- Header Navbar -->
@@ -78,7 +79,7 @@ desired effect
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-      <div style="font-family: STXingkai; text-align:center; font-size: 36px;line-height: 50px;color: #fff;">上&nbsp;海&nbsp;燃&nbsp;气&nbsp;集&nbsp;团&nbsp;信&nbsp;息&nbsp;发&nbsp;布&nbsp;平&nbsp;台</div>
+      <div style="font-family: STXingkai; text-align:center; font-size: 32px;line-height: 50px;color: #FFF600;">上&nbsp;海&nbsp;燃&nbsp;气&nbsp;集&nbsp;团&nbsp;信&nbsp;息&nbsp;发&nbsp;布&nbsp;平&nbsp;台</div>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -129,7 +130,7 @@ desired effect
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" style="background-color: #F9FDF9">
 
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -162,10 +163,10 @@ desired effect
 <!--         <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> 
           <span>首页</span>
         </a></li> -->
-        <li class="header">分类</li>
+       <!--  <li class="header">分类</li> -->
         <!-- Optionally, you can add icons to the links -->
             {% for category in site.categories %} 
-              <li><a href="{{ site.baseurl }}/#{{ category[0] }}"> <i class="fa fa-book"></i> 
+              <li style="margin-top: 20px;"><a href="{{ site.baseurl }}/#{{ category[0] }}"> <i class="fa fa-book"></i> 
                 <span>{{ category[0] | join: "/" }}</span> <small class="label label-warning pull-right">{{ category[1].size }}</small>
               </a></li>
             {% endfor %}
@@ -180,7 +181,7 @@ desired effect
   <div class="content-wrapper">
       
       {{ content }}
-
+  
   </div>
   <!-- /.content-wrapper -->
 
